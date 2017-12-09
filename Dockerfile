@@ -12,7 +12,7 @@ ENV TERRAFORM_VERSION 0.11.1
 ENV TERRAFORM_ZIP terraform_${TERRAFORM_VERSION}_linux_amd64.zip
 
 # Install package dependencies
-RUN apk add --no-cache unzip py-pip
+RUN apk add --no-cache unzip py-pip ca-certificates
 
 # Install AWS cli tool
 RUN pip install awscli
